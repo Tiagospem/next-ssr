@@ -3,8 +3,8 @@ import { loadGetInitialProps } from 'next-server/dist/lib/utils'
 import ReactGA from 'react-ga'
 
 
-export default () => Composed =>
-    class extends Component {
+export default () => Composed => class extends Component {
+
     static getInitialProps(ctx){
         return loadGetInitialProps(Composed, ctx)
     }
